@@ -10,7 +10,7 @@ switch ($operator) {
         $result = $firstNum + $secNum;
         break;
     case '-':
-        # code...
+        $result = $firstNum - $secNum;
         break;
     case '*':
         # code...
