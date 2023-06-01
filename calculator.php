@@ -3,7 +3,7 @@
 $firstNum = readline("What is the first number of the operation? ");
 $secNum = readline("What is the second number of the operation? ");
 $operator = readline("What is the operation sign (+, -, *, /)? ");
-$result = 0;
+$result = null;
 
 switch ($operator) {
     case '+':
@@ -20,8 +20,14 @@ switch ($operator) {
         break;
     
     default:
-        # code...
+        echo "Insert a valid operational symbol";
         break;
+}
+
+if($result !== null){
+echo "Result of the operation $firstNum $operator $secNum = $result";
+}else {
+    "Invalid result";
 }
 
 ?>
